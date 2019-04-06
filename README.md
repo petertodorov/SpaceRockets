@@ -7,6 +7,8 @@ Npm install
 
 Npm run build
 
+Npm start
+
 Go to http://localhost:8080/
 
 Choose a speed by clicking on one of the buttons. Normal speed burns one tone per second. Fast burns 100 tones per second
