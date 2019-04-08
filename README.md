@@ -30,10 +30,11 @@ The data for rockets - names, stages'fuel etc.  is loaded dinamycally from Space
 The rocket icons show the status of each rocket and dissapear when the total fuel of the rocket is depleted.
 ![Imgur](https://i.imgur.com/aRXs0tD.png)
 
-When the fuel of the rocket's stage one is empty the bottom half of the rocket dissapers.
+When the fuel of the rocket's stage one is empty the bottom half of the relevant rocket dissapers.
+
 ![Imgur](https://i.imgur.com/4pIArz3.png)
 
-When the fuel of the rocket's stage second is empty the rocket icon and the rocket dissapers.
+When the fuel of the rocket's stage second is empty the rocket icon and the top part and thrust of the relevant rocket dissapers.
 ![Imgur](https://i.imgur.com/BtMSwMH.png)
 
 If the rocket touches the upper boundary it stays there until the fuel is gone. The thrust remains to show the rocket still has fuel.
