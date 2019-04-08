@@ -5,11 +5,11 @@ Open folder MyRocketGame
 
 Execute in cmd:
 
-'npm install'
+`npm install`
 
-'npm run build'
+`npm run build`
 
-'Npm start'
+`Npm start`
 
 Open in browser http://localhost:8080/
 
