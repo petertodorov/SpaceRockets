@@ -13,7 +13,11 @@ Execute in cmd:
 
 Open in browser http://localhost:8080/
 
-Choose a speed by clicking on one of the buttons. Normal speed burns one tone per second. Fast burns 100 tones per second
+Choose a speed by clicking on one of the buttons. 
+
+Normal speed burns one tone per second.
+
+Fast burns 100 tones per second
 
 After the end you can replay the lounching by clicking the replay button
 
