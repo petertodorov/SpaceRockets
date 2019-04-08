@@ -20,15 +20,20 @@ Normal speed burns one tone per second.
 ![Imgur](https://i.imgur.com/1DUbeCv.png)
 
 Fast burns 100 tones per second
+[Imgur](https://i.imgur.com/Fbbh8bb.png)
 
 After the end you can replay the lounching by clicking the replay button
+![Imgur](https://i.imgur.com/I0udI77.png)
 
-The data for rockets - names, fuel, etc is loaded dinamycally from SpaceX API and will be reloaded on replay.
+The data for rockets - names, stages'fuel etc.  is loaded dinamycally from SpaceX API and will be reloaded on replay.
 
-The rocket icons show the status of each rocket.
+The rocket icons show the status of each rocket and dissapear when the total fuel of the rocket is depleted.
+![Imgur](https://i.imgur.com/OU81I3r.png)
 
-When stage one is empty the bottom half dissapers.
+When the fuel of the rocket's stage one is empty the bottom half of the rocket dissapers.
+![Imgur](https://i.imgur.com/4pIArz3.png)
 
-When stage second is empty the rocket icon and the rocket dissapers.
+When the fuel of the rocket's stage second is empty the rocket icon and the rocket dissapers.
+![Imgur](https://i.imgur.com/BtMSwMH.png)
 
 If the rocket touches the upper boundary it stays there until the fuel is gone. The thrust remains to show the rocket still has fuel.
