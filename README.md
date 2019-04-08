@@ -26,5 +26,3 @@ When stage one is empty the bottom half dissapers.
 When stage second is empty the rocket icon and the rocket dissapers.
 
 If the rocket touches the upper boundary it stays there until the fuel is gone. The thrust remains to show the rocket still has fuel.
-
-Made by: Peter Todorov
