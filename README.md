@@ -28,7 +28,7 @@ After the end you can replay the lounching by clicking the replay button
 The data for rockets - names, stages'fuel etc.  is loaded dinamycally from SpaceX API and will be reloaded on replay.
 
 The rocket icons show the status of each rocket and dissapear when the total fuel of the rocket is depleted.
-![Imgur](https://i.imgur.com/OU81I3r.png)
+![Imgur](https://i.imgur.com/aRXs0tD.png)
 
 When the fuel of the rocket's stage one is empty the bottom half of the rocket dissapers.
 ![Imgur](https://i.imgur.com/4pIArz3.png)
