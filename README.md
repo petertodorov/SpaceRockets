@@ -20,7 +20,7 @@ Normal speed burns one tone per second.
 ![Imgur](https://i.imgur.com/1DUbeCv.png)
 
 Fast burns 100 tones per second
-[Imgur](https://i.imgur.com/Fbbh8bb.png)
+![Imgur](https://i.imgur.com/Fbbh8bb.png)
 
 After the end you can replay the lounching by clicking the replay button
 ![Imgur](https://i.imgur.com/I0udI77.png)
