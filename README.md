@@ -38,3 +38,4 @@ When the fuel of the rocket's stage second is empty the rocket icon and the top 
 ![Imgur](https://i.imgur.com/BtMSwMH.png)
 
 If the rocket touches the upper boundary it stays there until the fuel is gone. The thrust remains to show the rocket still has fuel.
+![Imgur](https://i.imgur.com/HdN0Pd4.png)
