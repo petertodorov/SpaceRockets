@@ -17,6 +17,8 @@ Choose a speed by clicking on one of the buttons.
 
 Normal speed burns one tone per second.
 
+![Imgur](https://i.imgur.com/1DUbeCv.png)
+
 Fast burns 100 tones per second
 
 After the end you can replay the lounching by clicking the replay button
