@@ -3,11 +3,13 @@ Lounching Rockets
 
 Open folder MyRocketGame
 
-Npm install
+Execute in cmd:
 
-Npm run build
+'npm install'
 
-Npm start
+'npm run build'
+
+'Npm start'
 
 Go to http://localhost:8080/
 
