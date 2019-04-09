@@ -146,8 +146,8 @@ function checkRocketsStatus (allRockets) {
     if (rocket.fuelIsEmpty === true) {
       rocket.rocketContainer.alpha -= 0.01
       rocket.nameTagContainer.alpha -= 0.01
+      clearInterval(rocket.secondStageInterval)
       clearInterval(rocket.firstStageInterval)
-    clearInterval(rocket.secondStageInterval)
     } else {
       fuelChecker(rocket, index)
     }
