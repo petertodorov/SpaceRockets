@@ -92,11 +92,11 @@ async function setup (loader, resources) {
 
   state = lounchRockets
   app.ticker.add(delta => gameLoop(delta, allRockets))
-  allRockets.forEach(rocket => {rocket.useFuelFirstStage(fuelConsumptionPerSec)})
 }
 
 function gameLoop (delta, allRockets) {
   state(delta)
+  allRockets.forEach(rocket => {rocket.useFuelFirstStage(fuelConsumptionPerSec)})
   checkRocketsStatus(allRockets)
 }
 
