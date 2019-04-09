@@ -32,7 +32,7 @@ export default class Rocket {
       this.fuelFirstStage -= fuelConsumptionPerSec/60
       console.log(this.fuelFirstStage)
       if (this.fuelFirstStage <= 0) {
-        this.bottom.alpha -= 0.5;
+        this.bottom.alpha -= 0.1/7
         this.useFuelSecondStage(fuelConsumptionPerSec)
       } 
   }
@@ -40,8 +40,8 @@ export default class Rocket {
     this.thrust.y = this.top.height
       this.fuelSecondStage -= fuelConsumptionPerSec/60
       if (this.fuelSecondStage <= 0) {
-        this.top.alpha -= 0.1
-        this.thrust.alpha -= 0.1
+        this.top.alpha -= 0.1/7
+        this.thrust.alpha -= 0.1/7
         this.fuelIsEmpty = true
       }
   }
