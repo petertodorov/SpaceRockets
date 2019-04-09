@@ -146,6 +146,13 @@ function checkRocketsStatus (allRockets) {
     if (rocket.fuelIsEmpty === true) {
       rocket.rocketContainer.alpha -= 0.01
       rocket.nameTagContainer.alpha -= 0.01
+      setTimeout(()=>{
+          gameScene.removeChild(rocket.container);
+          gameScene.removeChild(rocket.rocketContainer)
+          gameScene.removeChild(rocket.nameTagContainer)
+          gameScene.removeChild(rocket.fuelFirstContainer)
+          gameScene.removeChild(rocket.fuelSecondContainer)  
+        },1000)
     } else {
       fuelChecker(rocket, index)
     }
