@@ -92,7 +92,7 @@ async function setup (loader, resources) {
 
   state = lounchRockets
   app.ticker.add(delta => gameLoop(delta, allRockets))
-  allRockets.forEach(rocket => { useFuelFirstStage(rocket) })
+  allRockets.forEach(rocket => {rocket.useFuelFirstStage(fuelConsumptionPerSec)})
 }
 
 function gameLoop (delta, allRockets) {
@@ -112,33 +112,6 @@ function lounchRockets () {
     rocket.container.y -= speed
     thrust.scale.y = Math.random()
   })
-}
-
-function useFuelFirstStage (rocket) {
-  let [ top, bottom, thrust] = rocket.container.children
-  setInterval(() => {
-    rocket.fuelFirstStage -= fuelConsumptionPerSec
-    if (rocket.fuelFirstStage <= 0) {
-      bottom.alpha -= 0.5
-      useFuelSecondStage(rocket)
-    }
-  }, 1000)
-
-}
-
-function useFuelSecondStage (rocket) {
-
-  let [top, bottom, thrust] = rocket.container.children
-  thrust.y = top.height
-
-  setInterval(() => {
-    rocket.fuelSecondStage -= fuelConsumptionPerSec
-    if (rocket.fuelSecondStage <= 0) {
-      top.alpha -= 0.1
-      thrust.alpha -= 0.1
-      rocket.fuelIsEmpty = true
-    }
-  }, 1000)
 }
 
 function fuelChecker (rocket, index) {
