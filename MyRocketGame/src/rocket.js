@@ -30,7 +30,6 @@ export default class Rocket {
   }
   useFuelFirstStage(fuelConsumptionPerSec) {
       this.fuelFirstStage -= fuelConsumptionPerSec/60
-      console.log(this.fuelFirstStage)
       if (this.fuelFirstStage <= 0) {
         this.bottom.alpha -= 0.1/7
         this.useFuelSecondStage(fuelConsumptionPerSec)
