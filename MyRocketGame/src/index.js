@@ -159,10 +159,12 @@ function fuelChecker (rocket, index) {
   }, 10)
 
   if (rocket.fuelFirstStage < 0) {
+    clearInterval(rocket.firstStageInterval)          
     clearInterval(removerFirstFuelInterval)
     rocket.fuelFirstContainer.destroy()
   }
   if (rocket.fuelSecondStage < 0) {
+    clearInterval(rocket.secondStageInterval)          
     clearInterval(removerSecondFuelInterval)
     rocket.fuelSecondContainer.destroy()
   }

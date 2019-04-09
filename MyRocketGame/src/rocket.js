@@ -1,7 +1,7 @@
 import { Container } from 'pixi.js'
 
 export default class Rocket {
-  constructor (top, bottom, thrust, rocket) {
+  constructor(top, bottom, thrust, rocket) {
     this.top = top
     this.bottom = bottom
     this.thrust = thrust
@@ -13,7 +13,7 @@ export default class Rocket {
     this.fuelSecondContainer = new Container()
     this.fuelIsEmpty = false
   }
-  makeContainer () {
+  makeContainer() {
     this.top.x = 0
     this.top.y = 0
     this.bottom.x = 0
@@ -25,7 +25,29 @@ export default class Rocket {
     this.container.addChild(this.bottom)
     this.container.addChild(this.thrust)
   }
-  makeIcon () {
+  makeIcon() {
     this.rocketContainer.addChild(this.rocket)
   }
+  useFuelFirstStage(fuelConsumptionPerSec) {
+    this.firstStageInterval = setInterval(() => {
+      this.fuelFirstStage -= fuelConsumptionPerSec
+      console.log(this.fuelFirstStage)
+      if (this.fuelFirstStage <= 0) {
+        this.bottom.alpha -= 0.5;
+        this.useFuelSecondStage(fuelConsumptionPerSec)
+      }
+    }, 1000)
+  }
+  useFuelSecondStage(fuelConsumptionPerSec) {
+    this.thrust.y = this.top.height
+    this.secondStageInterval = setInterval(() => {
+      this.fuelSecondStage -= fuelConsumptionPerSec
+      if (this.fuelSecondStage <= 0) {
+        this.top.alpha -= 0.1
+        this.thrust.alpha -= 0.1
+        this.fuelIsEmpty = true
+      }
+    }, 1000)
+  }
+
 }
