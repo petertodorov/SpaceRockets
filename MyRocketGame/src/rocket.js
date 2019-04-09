@@ -29,25 +29,21 @@ export default class Rocket {
     this.rocketContainer.addChild(this.rocket)
   }
   useFuelFirstStage(fuelConsumptionPerSec) {
-    this.firstStageInterval = setInterval(() => {
-      this.fuelFirstStage -= fuelConsumptionPerSec
+      this.fuelFirstStage -= fuelConsumptionPerSec/60
       console.log(this.fuelFirstStage)
       if (this.fuelFirstStage <= 0) {
         this.bottom.alpha -= 0.5;
         this.useFuelSecondStage(fuelConsumptionPerSec)
-      }
-    }, 1000)
+      } 
   }
   useFuelSecondStage(fuelConsumptionPerSec) {
     this.thrust.y = this.top.height
-    this.secondStageInterval = setInterval(() => {
-      this.fuelSecondStage -= fuelConsumptionPerSec
+      this.fuelSecondStage -= fuelConsumptionPerSec/60
       if (this.fuelSecondStage <= 0) {
         this.top.alpha -= 0.1
         this.thrust.alpha -= 0.1
         this.fuelIsEmpty = true
       }
-    }, 1000)
   }
 
 }
