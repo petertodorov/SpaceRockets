@@ -131,13 +131,11 @@ function fuelChecker (rocket, index) {
     rocket.fuelSecondContainer.removeChildren()
   }, 10)
 
-  if (rocket.fuelFirstStage < 0) {
-    clearInterval(rocket.firstStageInterval)          
+  if (rocket.fuelFirstStage < 0) {          
     clearInterval(removerFirstFuelInterval)
     rocket.fuelFirstContainer.destroy()
   }
-  if (rocket.fuelSecondStage < 0) {
-    clearInterval(rocket.secondStageInterval)          
+  if (rocket.fuelSecondStage < 0) {          
     clearInterval(removerSecondFuelInterval)
     rocket.fuelSecondContainer.destroy()
   }
@@ -148,6 +146,8 @@ function checkRocketsStatus (allRockets) {
     if (rocket.fuelIsEmpty === true) {
       rocket.rocketContainer.alpha -= 0.01
       rocket.nameTagContainer.alpha -= 0.01
+      clearInterval(rocket.firstStageInterval)
+    clearInterval(rocket.secondStageInterval)
     } else {
       fuelChecker(rocket, index)
     }
